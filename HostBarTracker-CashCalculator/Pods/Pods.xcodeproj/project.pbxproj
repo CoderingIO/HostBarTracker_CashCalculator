@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060F6E088F31C1203347207E06189F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		2C9863646D719A11ED0D277A2FB36D1E /* Pods-HostBarTracker-CashCalculatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0485620DD5BC32AD7F3B0893C0BD019 /* Pods-HostBarTracker-CashCalculatorTests-dummy.m */; };
+		39E6CA83298CB435F43D0B4312D97B90 /* Pods-HostBarTracker-CashCalculatorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59C4C3FA46B13CDE6C8E438D9934FDE3 /* Pods-HostBarTracker-CashCalculatorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47E9DBFAA13ABE81790AA6CA389318CC /* Pods-HostBarTracker-CashCalculatorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6222BADE5F40DD7BC413FBFA6BB6F1 /* Pods-HostBarTracker-CashCalculatorUITests-dummy.m */; };
+		5B589D2347FD10888877B3BE539DDC1A /* Pods-HostBarTracker-CashCalculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB4B3FDB7C3D95704B2202DC928DA8D /* Pods-HostBarTracker-CashCalculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EF2A0E410091B0FEA766560B2FE0547 /* Pods-HostBarTracker-CashCalculatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 914DCCDAA065F2834F82D79331CD25D2 /* Pods-HostBarTracker-CashCalculatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB1BB6F8BEA64AC8F33B873732B57825 /* Pods-HostBarTracker-CashCalculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E9E34C81264F6788812D5AF369C916 /* Pods-HostBarTracker-CashCalculator-dummy.m */; };
+		EEFF2BA53131FB1D553D606F4F265EF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F88141244056700EA414EC80C27FE410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FF0BD66D3C4E8B47706B8B28A4370AA /* Pods-HostBarTracker-CashCalculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HostBarTracker-CashCalculator-acknowledgements.plist"; sourceTree = "<group>"; };
+		20189015AFEC4182CFB5E6B054389460 /* Pods-HostBarTracker-CashCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HostBarTracker-CashCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		219603845216F3E24B767B2A50F80DBE /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		2B2F020960576DE2BEC9F6ED8E13C704 /* Pods-HostBarTracker-CashCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HostBarTracker-CashCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		3393685BEDFAC47BFB2B16EEEA4A7522 /* Pods_HostBarTracker_CashCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HostBarTracker_CashCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FBBBE8B147FCE6CEE886EF360FD2FE /* Pods_HostBarTracker_CashCalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HostBarTracker_CashCalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F59D5B74C35965DF1E1EDC24A799BE /* Pods-HostBarTracker-CashCalculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HostBarTracker-CashCalculator-resources.sh"; sourceTree = "<group>"; };
+		558FD8495DB6BB171CF181F9DEB4B38C /* Pods-HostBarTracker-CashCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HostBarTracker-CashCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		566F9C955A473E2496C5F124A24E8E7D /* Pods-HostBarTracker-CashCalculatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HostBarTracker-CashCalculatorTests.modulemap"; sourceTree = "<group>"; };
+		59C4C3FA46B13CDE6C8E438D9934FDE3 /* Pods-HostBarTracker-CashCalculatorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HostBarTracker-CashCalculatorUITests-umbrella.h"; sourceTree = "<group>"; };
+		5DE7A2AF81CDA39555CDD1D32393D49C /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		5FB047AC8F001B87D9EAB6E17C2A9527 /* Pods-HostBarTracker-CashCalculatorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HostBarTracker-CashCalculatorUITests.modulemap"; sourceTree = "<group>"; };
+		5FCA610B42F3FC7E280CD9DB56F17C89 /* Pods-HostBarTracker-CashCalculatorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HostBarTracker-CashCalculatorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		681E2DFB5A557E3B8C4EEDBFF67DE49E /* Pods-HostBarTracker-CashCalculatorUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HostBarTracker-CashCalculatorUITests-resources.sh"; sourceTree = "<group>"; };
+		6E6222BADE5F40DD7BC413FBFA6BB6F1 /* Pods-HostBarTracker-CashCalculatorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HostBarTracker-CashCalculatorUITests-dummy.m"; sourceTree = "<group>"; };
+		6F0E05F53CEA0736E3AB6FCA07E50DC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78AA5DF552E6422D8F195E1E35FDF1B5 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		7BA7533141F1D625932BB579493D4E77 /* Pods-HostBarTracker-CashCalculator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HostBarTracker-CashCalculator-frameworks.sh"; sourceTree = "<group>"; };
+		85E9E34C81264F6788812D5AF369C916 /* Pods-HostBarTracker-CashCalculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HostBarTracker-CashCalculator-dummy.m"; sourceTree = "<group>"; };
+		914DCCDAA065F2834F82D79331CD25D2 /* Pods-HostBarTracker-CashCalculatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HostBarTracker-CashCalculatorTests-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94D8A8665BAEB278A1A93E2D8D81A9C4 /* Pods-HostBarTracker-CashCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HostBarTracker-CashCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		A4CF7E8323E3F02C10DD75EE4D035D2D /* Pods-HostBarTracker-CashCalculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HostBarTracker-CashCalculator.modulemap"; sourceTree = "<group>"; };
+		A78252C599C01A6D09A2A13D334AF708 /* Pods-HostBarTracker-CashCalculatorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HostBarTracker-CashCalculatorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A9F3BB90D5A4207FC25B56E15F07DD70 /* Pods-HostBarTracker-CashCalculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HostBarTracker-CashCalculator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AE08282EAEA7D186238174BB9DEB65CE /* Pods-HostBarTracker-CashCalculatorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HostBarTracker-CashCalculatorTests-resources.sh"; sourceTree = "<group>"; };
+		BB04898E8C675BFFE69B97BDA8329DDB /* Pods-HostBarTracker-CashCalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HostBarTracker-CashCalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C2F589B936A49077DDABA339F1474FBF /* Pods_HostBarTracker_CashCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HostBarTracker_CashCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC892628BE535D1F55AE6F0C98D32935 /* Pods-HostBarTracker-CashCalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HostBarTracker-CashCalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DAA5738D1B2CD28375FDEBA73108AECF /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		DB0C6218955B23214F1D039504530F55 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		DF275361F137FFFAC95E10B9F0BAE4E5 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		E0485620DD5BC32AD7F3B0893C0BD019 /* Pods-HostBarTracker-CashCalculatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HostBarTracker-CashCalculatorTests-dummy.m"; sourceTree = "<group>"; };
+		E7F8CD36E1F7509E1ACD3265EBF80E69 /* Pods-HostBarTracker-CashCalculatorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HostBarTracker-CashCalculatorTests-frameworks.sh"; sourceTree = "<group>"; };
+		EB440DB70827723FA3178C3A49603C7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAD060BE1B3DC187E7DD96A70CA66FD /* Pods-HostBarTracker-CashCalculatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HostBarTracker-CashCalculatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EFE3427D55F5A9DC6FDD1007ACDDB63B /* Pods-HostBarTracker-CashCalculatorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HostBarTracker-CashCalculatorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1E5620A0289885D1A7BE12952288620 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		F43D528CB7DDD4C8B6CEBC8F783FFD66 /* Pods-HostBarTracker-CashCalculatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HostBarTracker-CashCalculatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F5EBAED07482128BE84EFA9723C72729 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB4B3FDB7C3D95704B2202DC928DA8D /* Pods-HostBarTracker-CashCalculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HostBarTracker-CashCalculator-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25E993E7B505E62A6EF85EFB7E59B7C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88141244056700EA414EC80C27FE410 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3695DBDCC739720077C30E474DD40CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEFF2BA53131FB1D553D606F4F265EF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F13D0F0E3EFF7E3BDD47C6E0E6099B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060F6E088F31C1203347207E06189F70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056B7FB4565C8F6CFBC262FDCD790C0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78AA5DF552E6422D8F195E1E35FDF1B5 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B8CEF19337FA4DFF56EC7EF36B16C09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E87E635A8BA23B6FDD7AFF5F5F24DCFC /* Firebase */,
+				17E963AC9EA7E429C37DA8FEEA72526B /* FirebaseAnalytics */,
+				C12C91F2C4C694776425E40592AE1113 /* FirebaseInstanceID */,
+				AEFF8F1B6621E9AFD02CAB76FC73388F /* GoogleInterchangeUtilities */,
+				D227E2B6883501EB56EEE7DB33608B01 /* GoogleSymbolUtilities */,
+				1FE7E728519B8C441DC0979AF90877D4 /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		17E963AC9EA7E429C37DA8FEEA72526B /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				4DE4BC04D076DD74278EEC09A1F9E9A2 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		1C089C840BDBDD9C5782C6FA983992FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2F589B936A49077DDABA339F1474FBF /* Pods_HostBarTracker_CashCalculator.framework */,
+				3393685BEDFAC47BFB2B16EEEA4A7522 /* Pods_HostBarTracker_CashCalculatorTests.framework */,
+				41FBBBE8B147FCE6CEE886EF360FD2FE /* Pods_HostBarTracker_CashCalculatorUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FE7E728519B8C441DC0979AF90877D4 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				3A09B82FC34DC854CBB4A7D6B7C35C65 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		243629847E28FA24559872187D5EA307 /* Pods-HostBarTracker-CashCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB440DB70827723FA3178C3A49603C7E /* Info.plist */,
+				566F9C955A473E2496C5F124A24E8E7D /* Pods-HostBarTracker-CashCalculatorTests.modulemap */,
+				ECAD060BE1B3DC187E7DD96A70CA66FD /* Pods-HostBarTracker-CashCalculatorTests-acknowledgements.markdown */,
+				F43D528CB7DDD4C8B6CEBC8F783FFD66 /* Pods-HostBarTracker-CashCalculatorTests-acknowledgements.plist */,
+				E0485620DD5BC32AD7F3B0893C0BD019 /* Pods-HostBarTracker-CashCalculatorTests-dummy.m */,
+				E7F8CD36E1F7509E1ACD3265EBF80E69 /* Pods-HostBarTracker-CashCalculatorTests-frameworks.sh */,
+				AE08282EAEA7D186238174BB9DEB65CE /* Pods-HostBarTracker-CashCalculatorTests-resources.sh */,
+				914DCCDAA065F2834F82D79331CD25D2 /* Pods-HostBarTracker-CashCalculatorTests-umbrella.h */,
+				558FD8495DB6BB171CF181F9DEB4B38C /* Pods-HostBarTracker-CashCalculatorTests.debug.xcconfig */,
+				2B2F020960576DE2BEC9F6ED8E13C704 /* Pods-HostBarTracker-CashCalculatorTests.release.xcconfig */,
+			);
+			name = "Pods-HostBarTracker-CashCalculatorTests";
+			path = "Target Support Files/Pods-HostBarTracker-CashCalculatorTests";
+			sourceTree = "<group>";
+		};
+		324E2F645E937130BB4D82B195447ABD /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				F1E5620A0289885D1A7BE12952288620 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		3A09B82FC34DC854CBB4A7D6B7C35C65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF275361F137FFFAC95E10B9F0BAE4E5 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4DE4BC04D076DD74278EEC09A1F9E9A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA5738D1B2CD28375FDEBA73108AECF /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64F74A9D63D71A5D89B231F445E3DB4F /* Pods-HostBarTracker-CashCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBAED07482128BE84EFA9723C72729 /* Info.plist */,
+				5FB047AC8F001B87D9EAB6E17C2A9527 /* Pods-HostBarTracker-CashCalculatorUITests.modulemap */,
+				5FCA610B42F3FC7E280CD9DB56F17C89 /* Pods-HostBarTracker-CashCalculatorUITests-acknowledgements.markdown */,
+				EFE3427D55F5A9DC6FDD1007ACDDB63B /* Pods-HostBarTracker-CashCalculatorUITests-acknowledgements.plist */,
+				6E6222BADE5F40DD7BC413FBFA6BB6F1 /* Pods-HostBarTracker-CashCalculatorUITests-dummy.m */,
+				A78252C599C01A6D09A2A13D334AF708 /* Pods-HostBarTracker-CashCalculatorUITests-frameworks.sh */,
+				681E2DFB5A557E3B8C4EEDBFF67DE49E /* Pods-HostBarTracker-CashCalculatorUITests-resources.sh */,
+				59C4C3FA46B13CDE6C8E438D9934FDE3 /* Pods-HostBarTracker-CashCalculatorUITests-umbrella.h */,
+				CC892628BE535D1F55AE6F0C98D32935 /* Pods-HostBarTracker-CashCalculatorUITests.debug.xcconfig */,
+				BB04898E8C675BFFE69B97BDA8329DDB /* Pods-HostBarTracker-CashCalculatorUITests.release.xcconfig */,
+			);
+			name = "Pods-HostBarTracker-CashCalculatorUITests";
+			path = "Target Support Files/Pods-HostBarTracker-CashCalculatorUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0B8CEF19337FA4DFF56EC7EF36B16C09 /* Pods */,
+				1C089C840BDBDD9C5782C6FA983992FA /* Products */,
+				AE6988CD1B67310E00FAA1B1B75BDCF4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		87D8B42F341EDC2E680E0CE1619A6A51 /* Pods-HostBarTracker-CashCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				6F0E05F53CEA0736E3AB6FCA07E50DC1 /* Info.plist */,
+				A4CF7E8323E3F02C10DD75EE4D035D2D /* Pods-HostBarTracker-CashCalculator.modulemap */,
+				A9F3BB90D5A4207FC25B56E15F07DD70 /* Pods-HostBarTracker-CashCalculator-acknowledgements.markdown */,
+				0FF0BD66D3C4E8B47706B8B28A4370AA /* Pods-HostBarTracker-CashCalculator-acknowledgements.plist */,
+				85E9E34C81264F6788812D5AF369C916 /* Pods-HostBarTracker-CashCalculator-dummy.m */,
+				7BA7533141F1D625932BB579493D4E77 /* Pods-HostBarTracker-CashCalculator-frameworks.sh */,
+				46F59D5B74C35965DF1E1EDC24A799BE /* Pods-HostBarTracker-CashCalculator-resources.sh */,
+				FCB4B3FDB7C3D95704B2202DC928DA8D /* Pods-HostBarTracker-CashCalculator-umbrella.h */,
+				20189015AFEC4182CFB5E6B054389460 /* Pods-HostBarTracker-CashCalculator.debug.xcconfig */,
+				94D8A8665BAEB278A1A93E2D8D81A9C4 /* Pods-HostBarTracker-CashCalculator.release.xcconfig */,
+			);
+			name = "Pods-HostBarTracker-CashCalculator";
+			path = "Target Support Files/Pods-HostBarTracker-CashCalculator";
+			sourceTree = "<group>";
+		};
+		8D816FB6035310E52D6DA53786BA4F67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DE7A2AF81CDA39555CDD1D32393D49C /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE6988CD1B67310E00FAA1B1B75BDCF4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87D8B42F341EDC2E680E0CE1619A6A51 /* Pods-HostBarTracker-CashCalculator */,
+				243629847E28FA24559872187D5EA307 /* Pods-HostBarTracker-CashCalculatorTests */,
+				64F74A9D63D71A5D89B231F445E3DB4F /* Pods-HostBarTracker-CashCalculatorUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AEFF8F1B6621E9AFD02CAB76FC73388F /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				F38FA45BD3E1C0E58BF4D98B0F38646B /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C12C91F2C4C694776425E40592AE1113 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				DB0C6218955B23214F1D039504530F55 /* FIRInstanceID.h */,
+				8D816FB6035310E52D6DA53786BA4F67 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		D227E2B6883501EB56EEE7DB33608B01 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				056B7FB4565C8F6CFBC262FDCD790C0C /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		E87E635A8BA23B6FDD7AFF5F5F24DCFC /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				324E2F645E937130BB4D82B195447ABD /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		F38FA45BD3E1C0E58BF4D98B0F38646B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				219603845216F3E24B767B2A50F80DBE /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6C209F9C72DEAC3549B8C83DA2CA083D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF2A0E410091B0FEA766560B2FE0547 /* Pods-HostBarTracker-CashCalculatorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73196C0BAABC1C414180BCE85509AB5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B589D2347FD10888877B3BE539DDC1A /* Pods-HostBarTracker-CashCalculator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8CAC756E3600FBA666E0DBA886762E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E6CA83298CB435F43D0B4312D97B90 /* Pods-HostBarTracker-CashCalculatorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		84F282B6BCEC438C950FC6437D82C04F /* Pods-HostBarTracker-CashCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49AD63B3D9D928322542CF0F00886CF4 /* Build configuration list for PBXNativeTarget "Pods-HostBarTracker-CashCalculator" */;
+			buildPhases = (
+				17E604D1A282EBE78E633287E98CF7A9 /* Sources */,
+				F13D0F0E3EFF7E3BDD47C6E0E6099B51 /* Frameworks */,
+				A73196C0BAABC1C414180BCE85509AB5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HostBarTracker-CashCalculator";
+			productName = "Pods-HostBarTracker-CashCalculator";
+			productReference = C2F589B936A49077DDABA339F1474FBF /* Pods_HostBarTracker_CashCalculator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A56EE97AC7FFAB510E74832DEE48DB8 /* Pods-HostBarTracker-CashCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E72D6149351797B4DA262344B0D45FC /* Build configuration list for PBXNativeTarget "Pods-HostBarTracker-CashCalculatorUITests" */;
+			buildPhases = (
+				386593E71D94D5E9F2ACD2A788805D52 /* Sources */,
+				3695DBDCC739720077C30E474DD40CD7 /* Frameworks */,
+				D8CAC756E3600FBA666E0DBA886762E6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HostBarTracker-CashCalculatorUITests";
+			productName = "Pods-HostBarTracker-CashCalculatorUITests";
+			productReference = 41FBBBE8B147FCE6CEE886EF360FD2FE /* Pods_HostBarTracker_CashCalculatorUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C29DB75BFC17F0BBED9AD9816AD94E92 /* Pods-HostBarTracker-CashCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CE9807F4B094EB49851E22F9B6E2898 /* Build configuration list for PBXNativeTarget "Pods-HostBarTracker-CashCalculatorTests" */;
+			buildPhases = (
+				9CCEE444247A1254746490CFE11D8C4B /* Sources */,
+				25E993E7B505E62A6EF85EFB7E59B7C4 /* Frameworks */,
+				6C209F9C72DEAC3549B8C83DA2CA083D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HostBarTracker-CashCalculatorTests";
+			productName = "Pods-HostBarTracker-CashCalculatorTests";
+			productReference = 3393685BEDFAC47BFB2B16EEEA4A7522 /* Pods_HostBarTracker_CashCalculatorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1C089C840BDBDD9C5782C6FA983992FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F282B6BCEC438C950FC6437D82C04F /* Pods-HostBarTracker-CashCalculator */,
+				C29DB75BFC17F0BBED9AD9816AD94E92 /* Pods-HostBarTracker-CashCalculatorTests */,
+				8A56EE97AC7FFAB510E74832DEE48DB8 /* Pods-HostBarTracker-CashCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17E604D1A282EBE78E633287E98CF7A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1BB6F8BEA64AC8F33B873732B57825 /* Pods-HostBarTracker-CashCalculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		386593E71D94D5E9F2ACD2A788805D52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E9DBFAA13ABE81790AA6CA389318CC /* Pods-HostBarTracker-CashCalculatorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CCEE444247A1254746490CFE11D8C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9863646D719A11ED0D277A2FB36D1E /* Pods-HostBarTracker-CashCalculatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		34591F57CE060C696E3FF4917C82CCAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B2F020960576DE2BEC9F6ED8E13C704 /* Pods-HostBarTracker-CashCalculatorTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculatorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculatorTests/Pods-HostBarTracker-CashCalculatorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HostBarTracker_CashCalculatorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		488C10B2429F1E50286F63C30B864551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558FD8495DB6BB171CF181F9DEB4B38C /* Pods-HostBarTracker-CashCalculatorTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculatorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculatorTests/Pods-HostBarTracker-CashCalculatorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HostBarTracker_CashCalculatorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		605D09A9321B4D87C3E2CF7E903A34E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB04898E8C675BFFE69B97BDA8329DDB /* Pods-HostBarTracker-CashCalculatorUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculatorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculatorUITests/Pods-HostBarTracker-CashCalculatorUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HostBarTracker_CashCalculatorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7C72920A08CD4590371C627FA2BE96A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D8A8665BAEB278A1A93E2D8D81A9C4 /* Pods-HostBarTracker-CashCalculator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculator/Pods-HostBarTracker-CashCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HostBarTracker_CashCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8827770DB3E7B0B3048AE01812F8FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20189015AFEC4182CFB5E6B054389460 /* Pods-HostBarTracker-CashCalculator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculator/Pods-HostBarTracker-CashCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HostBarTracker_CashCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4DDFD6AA4629B5D714E791D89D7FC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC892628BE535D1F55AE6F0C98D32935 /* Pods-HostBarTracker-CashCalculatorUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculatorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HostBarTracker-CashCalculatorUITests/Pods-HostBarTracker-CashCalculatorUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HostBarTracker_CashCalculatorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49AD63B3D9D928322542CF0F00886CF4 /* Build configuration list for PBXNativeTarget "Pods-HostBarTracker-CashCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8827770DB3E7B0B3048AE01812F8FC1 /* Debug */,
+				B7C72920A08CD4590371C627FA2BE96A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CE9807F4B094EB49851E22F9B6E2898 /* Build configuration list for PBXNativeTarget "Pods-HostBarTracker-CashCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				488C10B2429F1E50286F63C30B864551 /* Debug */,
+				34591F57CE060C696E3FF4917C82CCAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E72D6149351797B4DA262344B0D45FC /* Build configuration list for PBXNativeTarget "Pods-HostBarTracker-CashCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DDFD6AA4629B5D714E791D89D7FC02 /* Debug */,
+				605D09A9321B4D87C3E2CF7E903A34E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

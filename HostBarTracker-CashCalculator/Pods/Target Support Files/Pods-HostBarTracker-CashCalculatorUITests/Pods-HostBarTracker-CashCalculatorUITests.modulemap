@@ -1,0 +1,6 @@
+framework module Pods_HostBarTracker_CashCalculatorUITests {
+  umbrella header "Pods-HostBarTracker-CashCalculatorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
