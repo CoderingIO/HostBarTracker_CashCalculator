@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="191" y="543"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HostBarTracker_CashCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="HostBarTracker_CashCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -92,6 +92,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Go To Party"/>
                                 <connections>
+                                    <action selector="GoToPartyTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R25-9T-Fy4"/>
                                     <segue destination="hIN-xu-KOI" kind="show" id="Qdh-YT-ZB4"/>
                                 </connections>
                             </button>
@@ -100,6 +101,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign-Up"/>
                                 <connections>
+                                    <action selector="signUpTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJh-MO-PyH"/>
                                     <segue destination="qBG-Pj-uXC" kind="popoverPresentation" popoverAnchorView="exA-Cl-ylq" id="DEl-7R-FPC">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
@@ -109,6 +111,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="GL7-pO-5yT"/>
+                    <connections>
+                        <outlet property="goToPartyTouched" destination="Seq-bh-6Ks" id="yCp-rl-o1W"/>
+                        <outlet property="passsword" destination="GOW-rd-9Lh" id="l7C-SU-TaS"/>
+                        <outlet property="username" destination="u8Q-gF-2hw" id="epO-jR-lqg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -424,6 +431,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Xwy-Q6-vG9"/>
+        <segue reference="Qdh-YT-ZB4"/>
     </inferredMetricsTieBreakers>
 </document>
