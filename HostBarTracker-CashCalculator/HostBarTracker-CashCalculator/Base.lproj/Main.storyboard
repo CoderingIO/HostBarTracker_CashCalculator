@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="otT-vl-rzy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xNT-K3-w4r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="183" y="-217"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="8hy-FF-kUS">
             <objects>
-                <viewController id="qBG-Pj-uXC" sceneMemberID="viewController">
+                <viewController id="qBG-Pj-uXC" customClass="SignUpViewController" customModule="HostBarTracker_CashCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IqC-gj-MxR"/>
                         <viewControllerLayoutGuide type="bottom" id="A41-a8-xwg"/>
@@ -40,7 +40,7 @@
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3OF-0Y-BKp">
-                                <rect key="frame" x="150" y="171" width="300" height="30"/>
+                                <rect key="frame" x="150" y="200" width="300" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -49,21 +49,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sQ-hO-lpg">
+                                <rect key="frame" x="150" y="171" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.73725867146596857" green="0.028531595167055526" blue="0.0071187096239056866" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6b-c7-pHQ">
+                                <rect key="frame" x="150" y="238" width="300" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.64982820680628273" green="0.079629724919972986" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHW-T2-BIV">
-                                <rect key="frame" x="225" y="209" width="150" height="40"/>
+                                <rect key="frame" x="225" y="311" width="150" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign-Up"/>
                                 <connections>
-                                    <segue destination="xNT-K3-w4r" kind="show" id="0QA-SG-jYi"/>
+                                    <action selector="signUpTouched:" destination="qBG-Pj-uXC" eventType="touchUpInside" id="9Ag-xP-9Pp"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailErrorLabel" destination="3sQ-hO-lpg" id="yMr-fL-UOy"/>
+                        <outlet property="emailTextField" destination="hky-qM-TbC" id="0oW-BE-1wH"/>
+                        <outlet property="passwordErrorLabel" destination="R6b-c7-pHQ" id="ORz-wV-IUk"/>
+                        <outlet property="passwordTextField" destination="3OF-0Y-BKp" id="av3-47-rJQ"/>
+                        <outlet property="signUpButton" destination="OHW-T2-BIV" id="CCY-8i-FAc"/>
+                        <segue destination="mz1-OD-3MX" kind="show" identifier="ThankYouPopover" id="ZDs-bG-E4m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cai-oa-qZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191" y="543"/>
+            <point key="canvasLocation" x="-476" y="543"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -102,7 +122,7 @@
                                 <state key="normal" title="Sign-Up"/>
                                 <connections>
                                     <action selector="signUpTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJh-MO-PyH"/>
-                                    <segue destination="qBG-Pj-uXC" kind="popoverPresentation" popoverAnchorView="exA-Cl-ylq" id="DEl-7R-FPC">
+                                    <segue destination="qBG-Pj-uXC" kind="popoverPresentation" identifier="Welcome" popoverAnchorView="exA-Cl-ylq" id="DEl-7R-FPC">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>
@@ -112,8 +132,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="GL7-pO-5yT"/>
                     <connections>
-                        <outlet property="goToPartyTouched" destination="Seq-bh-6Ks" id="yCp-rl-o1W"/>
-                        <outlet property="passsword" destination="GOW-rd-9Lh" id="l7C-SU-TaS"/>
+                        <outlet property="password" destination="GOW-rd-9Lh" id="8FV-3D-poR"/>
                         <outlet property="username" destination="u8Q-gF-2hw" id="epO-jR-lqg"/>
                     </connections>
                 </viewController>
@@ -121,10 +140,48 @@
             </objects>
             <point key="canvasLocation" x="868" y="-211"/>
         </scene>
-        <!--View Controller-->
+        <!--Thanks View Controller-->
+        <scene sceneID="WHc-AV-xDx">
+            <objects>
+                <viewController id="mz1-OD-3MX" customClass="ThanksViewController" customModule="HostBarTracker_CashCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wyl-Jn-8qx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fss-pB-0n9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PJm-UU-B4e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQr-GX-9NY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Thank You" id="Ckn-9d-SqS"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt1-WJ-ufD">
+                                <rect key="frame" x="225" y="280" width="150" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Continue..."/>
+                                <connections>
+                                    <action selector="continueTouched:" destination="mz1-OD-3MX" eventType="touchUpInside" id="wjk-x9-4Y6"/>
+                                    <action selector="signUpTouched:" destination="qBG-Pj-uXC" eventType="touchUpInside" id="m3H-MO-22C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="xNT-K3-w4r" kind="show" identifier="ManagerScreen" id="Mzw-VA-BOx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Os4-zj-f3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="543"/>
+        </scene>
+        <!--Manager Screen View Controller-->
         <scene sceneID="Ojb-Rn-sFh">
             <objects>
-                <viewController id="xNT-K3-w4r" sceneMemberID="viewController">
+                <viewController id="xNT-K3-w4r" customClass="ManagerScreenViewController" customModule="HostBarTracker_CashCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cjN-Gg-BK2"/>
                         <viewControllerLayoutGuide type="bottom" id="yeo-7g-GiO"/>
@@ -138,9 +195,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add User"/>
                                 <connections>
-                                    <segue destination="Kwv-cq-JtX" kind="popoverPresentation" popoverAnchorView="bzP-7Z-x2t" id="G8K-Mg-koA">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <action selector="addUserTouched:" destination="xNT-K3-w4r" eventType="touchUpInside" id="Oys-81-VYQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0v-5B-0qy">
@@ -148,9 +203,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add Party"/>
                                 <connections>
-                                    <segue destination="SaC-M8-35S" kind="popoverPresentation" popoverAnchorView="m0v-5B-0qy" id="5Qn-gN-j70">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <action selector="addPartyTouched:" destination="xNT-K3-w4r" eventType="touchUpInside" id="MU6-eG-3gt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Slu-zx-us7">
@@ -158,9 +211,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add Drink"/>
                                 <connections>
-                                    <segue destination="Z3O-ql-lkn" kind="popoverPresentation" popoverAnchorView="Slu-zx-us7" id="No2-Ke-eYY">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <action selector="addDrinkTouched:" destination="xNT-K3-w4r" eventType="touchUpInside" id="hVU-T2-daN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7d-Mt-0HG">
@@ -168,18 +219,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Go To Party"/>
                                 <connections>
-                                    <segue destination="hIN-xu-KOI" kind="show" id="Xwy-Q6-vG9"/>
+                                    <action selector="goToPartyTouched:" destination="xNT-K3-w4r" eventType="touchUpInside" id="lWR-di-Q1U"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ky-qF-syq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="J09-05-sAx"/>
+                                    <navigationItem title="Manager Screen" id="J09-05-sAx"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="Kwv-cq-JtX" kind="popoverPresentation" identifier="addUser" popoverAnchorView="bzP-7Z-x2t" id="oPT-LB-OpN">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                        <segue destination="SaC-M8-35S" kind="popoverPresentation" identifier="addParty" popoverAnchorView="m0v-5B-0qy" id="XGJ-ua-7K7">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                        <segue destination="Z3O-ql-lkn" kind="popoverPresentation" identifier="addDrink" popoverAnchorView="Slu-zx-us7" id="JZr-Tk-dWM">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                        <segue destination="hIN-xu-KOI" kind="show" identifier="goToParty" id="en4-aX-P5j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fha-G0-X7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TxR-93-bkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="1307"/>
+            <point key="canvasLocation" x="856" y="1314"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u9x-Fq-DkY">
@@ -265,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oQ-Jc-Znr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1481" y="1307"/>
+            <point key="canvasLocation" x="1476" y="1314"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RGR-1O-9K1">
@@ -315,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVK-z6-jDE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225" y="1307"/>
+            <point key="canvasLocation" x="235" y="1314"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wQ1-v1-R3k">
@@ -431,6 +494,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Qdh-YT-ZB4"/>
+        <segue reference="en4-aX-P5j"/>
     </inferredMetricsTieBreakers>
 </document>

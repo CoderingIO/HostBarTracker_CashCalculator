@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+// need to import FirebaseAuth Framework.
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -15,7 +17,7 @@ class LoginViewController: UIViewController {
     let appName:String = "HostBarTracker_CashCalculator"
     
     // ref to Firebase URL
-    let ref = FIRApp(named:"https://hostbartracker-cashcalculator.firebaseio.com/")
+    //let ref = FIRApp(named:"https://hostbartracker-cashcalculator.firebaseio.com/")
     
     
     // link to user name text field
@@ -23,7 +25,7 @@ class LoginViewController: UIViewController {
     
     
     // link to password textfield
-    @IBOutlet var passsword: UITextField!
+    @IBOutlet var password: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,9 +40,14 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func GoToPartyTouched(sender: AnyObject) {
+        
+        FIRAuth.auth()?.signInWithEmail(username.text!, password: password.text!) { (user, error) in
+        }
+    
     }
     
     @IBAction func signUpTouched(sender: AnyObject) {
+        self.performSegueWithIdentifier("Welcome", sender: nil)
     }
     
 

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		09E4B9C0F2EA50DD3A78A7F9 /* Pods_HostBarTracker_CashCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1D00D4540F798D7C6D3B3 /* Pods_HostBarTracker_CashCalculator.framework */; };
+		9E434E351D106B8C00A75E5D /* ThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E434E341D106B8C00A75E5D /* ThanksViewController.swift */; };
+		9E434E371D120EE600A75E5D /* PasswordRegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E434E361D120EE600A75E5D /* PasswordRegEx.swift */; };
+		9E434E391D136F9400A75E5D /* ManagerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E434E381D136F9400A75E5D /* ManagerScreenViewController.swift */; };
+		9EC776481D0E248E0076E602 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC776471D0E248E0076E602 /* SignUpViewController.swift */; };
+		9EC7764B1D0E6C180076E602 /* wbHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7764A1D0E6C180076E602 /* wbHelpers.swift */; };
 		9EC825481D0B9EF700BEB503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC825471D0B9EF700BEB503 /* AppDelegate.swift */; };
 		9EC8254D1D0B9EF700BEB503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC8254B1D0B9EF700BEB503 /* Main.storyboard */; };
 		9EC8254F1D0B9EF700BEB503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC8254E1D0B9EF700BEB503 /* Assets.xcassets */; };
@@ -46,6 +51,11 @@
 		3C4BD0A5A45C71B208C06373 /* Pods-HostBarTracker-CashCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostBarTracker-CashCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HostBarTracker-CashCalculator/Pods-HostBarTracker-CashCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		6E150F775F306CA940585601 /* Pods-HostBarTracker-CashCalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostBarTracker-CashCalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HostBarTracker-CashCalculatorUITests/Pods-HostBarTracker-CashCalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		90D04ACF0FDBF63FAF5CECE6 /* Pods-HostBarTracker-CashCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostBarTracker-CashCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-HostBarTracker-CashCalculator/Pods-HostBarTracker-CashCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		9E434E341D106B8C00A75E5D /* ThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanksViewController.swift; sourceTree = "<group>"; };
+		9E434E361D120EE600A75E5D /* PasswordRegEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRegEx.swift; sourceTree = "<group>"; };
+		9E434E381D136F9400A75E5D /* ManagerScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerScreenViewController.swift; sourceTree = "<group>"; };
+		9EC776471D0E248E0076E602 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9EC7764A1D0E6C180076E602 /* wbHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wbHelpers.swift; sourceTree = "<group>"; };
 		9EC825441D0B9EF700BEB503 /* HostBarTracker-CashCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HostBarTracker-CashCalculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC825471D0B9EF700BEB503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC8254C1D0B9EF700BEB503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EC776491D0E6BF50076E602 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9EC7764A1D0E6C180076E602 /* wbHelpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		9EC8253B1D0B9EF700BEB503 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +134,7 @@
 		9EC825461D0B9EF700BEB503 /* HostBarTracker-CashCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				9EC776491D0E6BF50076E602 /* Helpers */,
 				9EE3068D1D0D07F400678557 /* Controllers */,
 				9EC825471D0B9EF700BEB503 /* AppDelegate.swift */,
 				9EC8254B1D0B9EF700BEB503 /* Main.storyboard */,
@@ -149,6 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				9EE3068E1D0D080A00678557 /* LoginViewController.swift */,
+				9EC776471D0E248E0076E602 /* SignUpViewController.swift */,
+				9E434E361D120EE600A75E5D /* PasswordRegEx.swift */,
+				9E434E341D106B8C00A75E5D /* ThanksViewController.swift */,
+				9E434E381D136F9400A75E5D /* ManagerScreenViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -442,7 +465,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E434E371D120EE600A75E5D /* PasswordRegEx.swift in Sources */,
+				9E434E351D106B8C00A75E5D /* ThanksViewController.swift in Sources */,
+				9EC776481D0E248E0076E602 /* SignUpViewController.swift in Sources */,
 				9EE3068F1D0D080A00678557 /* LoginViewController.swift in Sources */,
+				9EC7764B1D0E6C180076E602 /* wbHelpers.swift in Sources */,
+				9E434E391D136F9400A75E5D /* ManagerScreenViewController.swift in Sources */,
 				9EC825481D0B9EF700BEB503 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
