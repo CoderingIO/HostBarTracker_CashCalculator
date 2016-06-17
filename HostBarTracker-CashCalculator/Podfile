@@ -8,6 +8,7 @@ target 'HostBarTracker-CashCalculator' do
   # Pods for HostBarTracker-CashCalculator
 
   pod 'Firebase'
+  pod 'Firebase/Auth'
 
   target 'HostBarTracker-CashCalculatorTests' do
     inherit! :search_paths
