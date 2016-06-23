@@ -33,12 +33,7 @@ class SignUpViewController: UIViewController, UIPopoverPresentationControllerDel
         }
     }
     
-    func isValidEmail(email:String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-        
-        let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluateWithObject(email)
-    }
+
     
     @IBOutlet weak var emailErrorLabel: UILabel!
     
@@ -55,18 +50,31 @@ class SignUpViewController: UIViewController, UIPopoverPresentationControllerDel
         let newEmail = emailTextField.text
         let newPassword = passwordTextField.text
         
-        if isValidEmail(newEmail!) == true
+        if RegExp.isValidEmail(newEmail!) == true
         {
             if RegExp.checkPasswordComplexity(password: newPassword!, length: 8, patternsToEscape: ["pass"], caseSensitivity: true, numericDigits: true)
-            
             {
             
-                FIRAuth.auth()?.createUserWithEmail(newEmail!, password: passwordTextField.text!)
+                FIRAuth.auth()?.createUserWithEmail(newEmail!, password: newPassword!)
                 { (user, error) in
                     if let error = error
                     {
                         print(error.localizedDescription)
                         return
+                    }
+                    
+                    // verification of user getting created do not need for release
+                    if let user = FIRAuth.auth()?.currentUser {
+                        _ = user.email
+                        print(user.email)
+                        _ = user.uid
+                        print(user.uid)
+                        // The user's ID, unique to the Firebase project.
+                        // Do NOT use this value to authenticate with
+                        // your backend server, if you have one. Use
+                        // getTokenWithCompletion:completion: instead.
+                    } else {
+                        // No user is signed in.
                     }
                 
                     if error == nil

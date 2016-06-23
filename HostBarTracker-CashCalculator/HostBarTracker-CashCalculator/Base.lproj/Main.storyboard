@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xNT-K3-w4r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="otT-vl-rzy">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -248,10 +248,10 @@
             </objects>
             <point key="canvasLocation" x="856" y="543"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Party View Controller-->
         <scene sceneID="liL-vV-l1v">
             <objects>
-                <viewController id="SaC-M8-35S" sceneMemberID="viewController">
+                <viewController id="SaC-M8-35S" customClass="AddPartyViewController" customModule="HostBarTracker_CashCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2B6-dJ-Abc"/>
                         <viewControllerLayoutGuide type="bottom" id="XPs-YY-i7Y"/>
@@ -277,13 +277,36 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IU8-m7-gl2">
-                                <rect key="frame" x="150" y="226" width="150" height="44"/>
+                                <rect key="frame" x="150" y="381" width="150" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Create Party"/>
+                                <connections>
+                                    <action selector="CreatPartyTouched:" destination="SaC-M8-35S" eventType="touchUpInside" id="1dB-bX-7Ji"/>
+                                </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m62-Sa-Dle">
+                                <rect key="frame" x="401" y="231" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hosted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpq-Eq-YVW">
+                                <rect key="frame" x="150" y="227" width="150" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cap Amount $" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TjO-cE-UHg">
+                                <rect key="frame" x="150" y="275" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="capAmountTextField" destination="TjO-cE-UHg" id="SBR-hy-IhR"/>
+                        <outlet property="dateOfPartyTextField" destination="MiH-b3-6nK" id="YD8-dr-5Rf"/>
+                        <outlet property="isHostedSwitch" destination="m62-Sa-Dle" id="7bb-ja-4N0"/>
+                        <outlet property="nameOfPartyTextField" destination="47n-iK-rfN" id="IA6-AK-IF0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TxR-93-bkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,10 +353,10 @@
             </objects>
             <point key="canvasLocation" x="1476" y="1314"/>
         </scene>
-        <!--View Controller-->
+        <!--Add User View Controller-->
         <scene sceneID="RGR-1O-9K1">
             <objects>
-                <viewController id="Kwv-cq-JtX" sceneMemberID="viewController">
+                <viewController id="Kwv-cq-JtX" customClass="AddUserViewController" customModule="HostBarTracker_CashCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ic1-Mr-dTP"/>
                         <viewControllerLayoutGuide type="bottom" id="kTw-9U-gGr"/>
@@ -358,6 +381,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qo7-0f-cBj">
+                                <rect key="frame" x="150" y="279" width="150" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create User"/>
+                                <connections>
+                                    <action selector="createUserTouched:" destination="Kwv-cq-JtX" eventType="touchUpInside" id="164-b9-B4Z"/>
+                                </connections>
+                            </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5pU-0h-XIg">
                                 <rect key="frame" x="401" y="235" width="51" height="31"/>
                             </switch>
@@ -367,14 +398,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qo7-0f-cBj">
-                                <rect key="frame" x="150" y="279" width="150" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Create User"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="enterUserNameTextField" destination="RsR-fw-qhn" id="ItH-4h-2vM"/>
+                        <outlet property="enterUserPasswordTextField" destination="bSW-CL-4af" id="T76-O6-ycU"/>
+                        <outlet property="isManagerSwitch" destination="5pU-0h-XIg" id="J39-4K-SaB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVK-z6-jDE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -494,6 +525,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="en4-aX-P5j"/>
+        <segue reference="Qdh-YT-ZB4"/>
     </inferredMetricsTieBreakers>
 </document>
