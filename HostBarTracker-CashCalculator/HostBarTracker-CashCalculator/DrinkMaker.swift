@@ -21,13 +21,13 @@ public class DrinkMaker {
         self.count = count
     }
     
-//    func toAnyObject() -> AnyObject {
-//        return [
-//            "name": name,
-//            "price": price,
-//            "timesTouched": timesTouched,
-//            "counter": count
-//        ]
-//    }
+    func toAnyObject() -> AnyObject {
+        return [
+            "name": name,
+            "price": price,
+            "timesTouched": timesTouched,
+            "counter": count
+        ]
+    }
     
 }

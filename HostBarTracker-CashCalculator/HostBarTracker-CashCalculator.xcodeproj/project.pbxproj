@@ -26,6 +26,7 @@
 		9EC825681D0B9EF800BEB503 /* HostBarTracker_CashCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC825671D0B9EF800BEB503 /* HostBarTracker_CashCalculatorUITests.swift */; };
 		9EC825761D0B9F6400BEB503 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EC825751D0B9F6400BEB503 /* GoogleService-Info.plist */; };
 		9EE3068F1D0D080A00678557 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3068E1D0D080A00678557 /* LoginViewController.swift */; };
+		9EE4A8851D1C373B007AEB25 /* AddDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE4A8841D1C373B007AEB25 /* AddDrinkViewController.swift */; };
 		B711A1860F3DCED627A6F42E /* Pods_HostBarTracker_CashCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC78587B9B02E3A91A44BAE /* Pods_HostBarTracker_CashCalculatorTests.framework */; };
 		EB549B9B20DF1D2DC863C16B /* Pods_HostBarTracker_CashCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8FABF52B574A51F7717416 /* Pods_HostBarTracker_CashCalculatorUITests.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		9EC825691D0B9EF800BEB503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC825751D0B9F6400BEB503 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9EE3068E1D0D080A00678557 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9EE4A8841D1C373B007AEB25 /* AddDrinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDrinkViewController.swift; sourceTree = "<group>"; };
 		BDC78587B9B02E3A91A44BAE /* Pods_HostBarTracker_CashCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HostBarTracker_CashCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,6 +197,7 @@
 				9E434E381D136F9400A75E5D /* ManagerScreenViewController.swift */,
 				9E434E3A1D13786500A75E5D /* AddUserViewController.swift */,
 				9E36C2441D15B70D00FF72B5 /* AddPartyViewController.swift */,
+				9EE4A8841D1C373B007AEB25 /* AddDrinkViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				9E434E3B1D13786500A75E5D /* AddUserViewController.swift in Sources */,
 				9E36C2411D15A5B600FF72B5 /* PartyMaker.swift in Sources */,
 				9E434E391D136F9400A75E5D /* ManagerScreenViewController.swift in Sources */,
+				9EE4A8851D1C373B007AEB25 /* AddDrinkViewController.swift in Sources */,
 				9E36C2431D15A86000FF72B5 /* DrinkMaker.swift in Sources */,
 				9EC825481D0B9EF700BEB503 /* AppDelegate.swift in Sources */,
 				9E36C2451D15B70D00FF72B5 /* AddPartyViewController.swift in Sources */,

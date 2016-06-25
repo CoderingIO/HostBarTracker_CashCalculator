@@ -14,12 +14,14 @@ class AddPartyViewController: UIViewController {
     
 
     @IBOutlet weak var nameOfPartyTextField: UITextField!
-    @IBOutlet weak var dateOfPartyTextField: UITextField!
+    
+    @IBOutlet weak var dateOfParty: UIDatePicker!
     @IBOutlet weak var isHostedSwitch: UISwitch!
     @IBOutlet weak var capAmountTextField: UITextField!
     
     var parties = [PartyMaker]()
     var isCashBar:Bool = false
+    var partyDateAsString:String = ""
     
     
     let ref = FIRDatabase.database().reference()
@@ -32,9 +34,19 @@ class AddPartyViewController: UIViewController {
 
         isHostedSwitch.addTarget(self, action:#selector(AddPartyViewController.isCashBarTouched(_:)), forControlEvents: UIControlEvents.ValueChanged)
         
+        dateOfParty.addTarget(self, action: #selector(partyDatePicked(_:)), forControlEvents: UIControlEvents.ValueChanged)
         
     }
-
+    
+    func partyDatePicked(datePicker:UIDatePicker) {
+        let dateFormat = NSDateFormatter()
+        
+        dateFormat.dateStyle = NSDateFormatterStyle.ShortStyle
+        dateFormat.timeStyle = NSDateFormatterStyle.ShortStyle
+        
+        partyDateAsString = dateFormat.stringFromDate(dateOfParty.date)
+        print(partyDateAsString)
+    }
     
     func isCashBarTouched(sender: AnyObject) {
         
@@ -52,11 +64,11 @@ class AddPartyViewController: UIViewController {
     
     @IBAction func CreatPartyTouched(sender: AnyObject) {
         
-        let newParty = PartyMaker(date: dateOfPartyTextField.text!, name: nameOfPartyTextField.text!, isCashBar: isCashBar, capAmount: Double(capAmountTextField.text!)!)
+        let newParty = PartyMaker(date: partyDateAsString, name: nameOfPartyTextField.text!, isCashBar: isCashBar, capAmount: Double(capAmountTextField.text!)!)
         
         self.ref.child("users/\(FIRAuth.auth()!.currentUser!.uid)").child(nameOfPartyTextField.text!).setValue(newParty.toAnyObject())
     
-        parties.append(PartyMaker.init(date: (dateOfPartyTextField.text!), name: nameOfPartyTextField.text!, isCashBar:isCashBar, capAmount:Double(capAmountTextField.text!)!))
+        parties.append(PartyMaker.init(date: (partyDateAsString), name: nameOfPartyTextField.text!, isCashBar:isCashBar, capAmount:Double(capAmountTextField.text!)!))
         //for party in parties {
         //    print(party.name, party.date, party.capAmount, party.isCashBar)
         //}
