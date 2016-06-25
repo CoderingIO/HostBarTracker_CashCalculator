@@ -16,6 +16,7 @@
 		9E434E391D136F9400A75E5D /* ManagerScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E434E381D136F9400A75E5D /* ManagerScreenViewController.swift */; };
 		9E434E3B1D13786500A75E5D /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E434E3A1D13786500A75E5D /* AddUserViewController.swift */; };
 		9E434E3F1D13B48F00A75E5D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E434E3E1D13B48F00A75E5D /* Users.swift */; };
+		9E5188DA1D1F089500DE46EF /* PartyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5188D91D1F089500DE46EF /* PartyPickerViewController.swift */; };
 		9EC776481D0E248E0076E602 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC776471D0E248E0076E602 /* SignUpViewController.swift */; };
 		9EC7764B1D0E6C180076E602 /* wbHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7764A1D0E6C180076E602 /* wbHelpers.swift */; };
 		9EC825481D0B9EF700BEB503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC825471D0B9EF700BEB503 /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		9E434E381D136F9400A75E5D /* ManagerScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerScreenViewController.swift; sourceTree = "<group>"; };
 		9E434E3A1D13786500A75E5D /* AddUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		9E434E3E1D13B48F00A75E5D /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		9E5188D91D1F089500DE46EF /* PartyPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyPickerViewController.swift; sourceTree = "<group>"; };
 		9EC776471D0E248E0076E602 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9EC7764A1D0E6C180076E602 /* wbHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wbHelpers.swift; sourceTree = "<group>"; };
 		9EC825441D0B9EF700BEB503 /* HostBarTracker-CashCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HostBarTracker-CashCalculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +200,7 @@
 				9E434E3A1D13786500A75E5D /* AddUserViewController.swift */,
 				9E36C2441D15B70D00FF72B5 /* AddPartyViewController.swift */,
 				9EE4A8841D1C373B007AEB25 /* AddDrinkViewController.swift */,
+				9E5188D91D1F089500DE46EF /* PartyPickerViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				9E434E351D106B8C00A75E5D /* ThanksViewController.swift in Sources */,
 				9EC776481D0E248E0076E602 /* SignUpViewController.swift in Sources */,
 				9EE3068F1D0D080A00678557 /* LoginViewController.swift in Sources */,
+				9E5188DA1D1F089500DE46EF /* PartyPickerViewController.swift in Sources */,
 				9EC7764B1D0E6C180076E602 /* wbHelpers.swift in Sources */,
 				9E434E3B1D13786500A75E5D /* AddUserViewController.swift in Sources */,
 				9E36C2411D15A5B600FF72B5 /* PartyMaker.swift in Sources */,

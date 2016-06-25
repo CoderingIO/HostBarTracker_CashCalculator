@@ -28,7 +28,10 @@ class AddDrinkViewController: UIViewController {
         
         let newDrink = DrinkMaker(nameOfDrink: nameOfDrinkTextField.text!, price: Double(priceOfDrinkTextField.text!)!, timesTouched: 0, count: 0)
         
-        self.ref.child("users/\(FIRAuth.auth()!.currentUser!.uid)").child(nameOfDrinkTextField.text!).setValue(newDrink.toAnyObject())
+        self.ref.child("users/groupID/Drinks").child(nameOfDrinkTextField.text!).setValue(newDrink.toAnyObject())
+
+        
+        //self.ref.child("users/\(FIRAuth.auth()!.currentUser!.uid)").child(nameOfDrinkTextField.text!).setValue(newDrink.toAnyObject())
         
     
         dismissViewControllerAnimated(true, completion: nil)

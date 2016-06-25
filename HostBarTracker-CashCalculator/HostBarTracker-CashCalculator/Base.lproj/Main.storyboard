@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -453,12 +454,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZX-3y-lpf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Add Drink" id="sro-Eq-Ycn"/>
-                                </items>
-                            </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name of Drink" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wnx-nO-8RD">
                                 <rect key="frame" x="150" y="240" width="300" height="30"/>
                                 <constraints>
@@ -477,8 +472,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScR-Cm-x37">
-                                <rect key="frame" x="150" y="316" width="150" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScR-Cm-x37">
+                                <rect key="frame" x="225" y="316" width="150" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="bes-uF-GYg"/>
                                     <constraint firstAttribute="width" constant="150" id="ub3-kx-fBl"/>
@@ -489,13 +484,22 @@
                                     <action selector="makeDrinkTouched:" destination="Z3O-ql-lkn" eventType="touchUpInside" id="kFu-Qs-VIo"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZX-3y-lpf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Add Drink" id="sro-Eq-Ycn"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ScR-Cm-x37" firstAttribute="centerX" secondItem="DHX-Ve-26q" secondAttribute="centerX" id="I8U-Eg-Z93"/>
                             <constraint firstItem="DHX-Ve-26q" firstAttribute="centerX" secondItem="Wnx-nO-8RD" secondAttribute="centerX" id="JKj-Dt-axk"/>
+                            <constraint firstItem="NZX-3y-lpf" firstAttribute="top" secondItem="HtC-0a-OTN" secondAttribute="topMargin" id="LOZ-Tg-gtv"/>
                             <constraint firstItem="DHX-Ve-26q" firstAttribute="top" secondItem="Wnx-nO-8RD" secondAttribute="bottom" constant="8" id="ON0-R0-mlX"/>
                             <constraint firstItem="Wnx-nO-8RD" firstAttribute="top" secondItem="gk3-uC-dAw" secondAttribute="bottom" constant="220" id="Rfu-yG-9KL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NZX-3y-lpf" secondAttribute="trailing" constant="-20" id="fwu-vm-fe3"/>
+                            <constraint firstItem="NZX-3y-lpf" firstAttribute="leading" secondItem="HtC-0a-OTN" secondAttribute="leadingMargin" constant="-20" id="oSa-GY-iyT"/>
                             <constraint firstItem="ScR-Cm-x37" firstAttribute="top" secondItem="DHX-Ve-26q" secondAttribute="bottom" constant="8" id="rad-c6-qYs"/>
                             <constraint firstItem="Wnx-nO-8RD" firstAttribute="centerX" secondItem="HtC-0a-OTN" secondAttribute="centerX" id="vRC-AX-Q9H"/>
                         </constraints>
@@ -567,10 +571,10 @@
             </objects>
             <point key="canvasLocation" x="235" y="1314"/>
         </scene>
-        <!--View Controller-->
+        <!--Party Picker-->
         <scene sceneID="wQ1-v1-R3k">
             <objects>
-                <viewController id="hIN-xu-KOI" sceneMemberID="viewController">
+                <viewController id="hIN-xu-KOI" customClass="PartyPickerViewController" customModule="HostBarTracker_CashCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sPt-ug-q2r"/>
                         <viewControllerLayoutGuide type="bottom" id="Qlc-5b-vXG"/>
@@ -579,7 +583,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Npe-fS-oTh">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Npe-fS-oTh">
                                 <rect key="frame" x="150" y="192" width="300" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="5CC-mD-Jis"/>
@@ -592,7 +596,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymd-yZ-xdO">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymd-yZ-xdO">
                                 <rect key="frame" x="225" y="416" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="g7n-ht-y9e"/>
@@ -600,7 +604,16 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Go to Party"/>
+                                <connections>
+                                    <action selector="goToPartyTouched:" destination="hIN-xu-KOI" eventType="touchUpInside" id="Uaq-W3-aYC"/>
+                                </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y5b-8e-PEa">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="uYI-0H-yBv"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -612,8 +625,9 @@
                             <constraint firstItem="661-hx-0uN" firstAttribute="centerX" secondItem="Npe-fS-oTh" secondAttribute="centerX" id="tvm-xj-Cmg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OgF-8S-WuX"/>
+                    <navigationItem key="navigationItem" title="Party Picker" id="OgF-8S-WuX"/>
                     <connections>
+                        <outlet property="partyPicker" destination="Npe-fS-oTh" id="kRC-QP-ClA"/>
                         <segue destination="3h7-aG-6gE" kind="show" id="ie0-er-OlP"/>
                         <segue destination="xka-gv-lic" kind="show" id="8ec-yb-p9t"/>
                     </connections>

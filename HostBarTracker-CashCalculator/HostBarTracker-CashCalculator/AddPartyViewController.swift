@@ -66,7 +66,10 @@ class AddPartyViewController: UIViewController {
         
         let newParty = PartyMaker(date: partyDateAsString, name: nameOfPartyTextField.text!, isCashBar: isCashBar, capAmount: Double(capAmountTextField.text!)!)
         
-        self.ref.child("users/\(FIRAuth.auth()!.currentUser!.uid)").child(nameOfPartyTextField.text!).setValue(newParty.toAnyObject())
+        
+        self.ref.child("users/groupID/Parties").child(partyDateAsString).setValue(newParty.toAnyObject())
+        
+        //self.ref.child("users/\(FIRAuth.auth()!.currentUser!.uid)").child(nameOfPartyTextField.text!).setValue(newParty.toAnyObject())
     
         parties.append(PartyMaker.init(date: (partyDateAsString), name: nameOfPartyTextField.text!, isCashBar:isCashBar, capAmount:Double(capAmountTextField.text!)!))
         //for party in parties {
