@@ -589,6 +589,10 @@
                                     <constraint firstAttribute="width" constant="300" id="5CC-mD-Jis"/>
                                     <constraint firstAttribute="height" constant="216" id="jSA-sp-87g"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="7By-ma-64p" id="zYi-RT-rZe"/>
+                                    <outlet property="delegate" destination="7By-ma-64p" id="HyE-lm-KHg"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Available Parties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="661-hx-0uN">
                                 <rect key="frame" x="150" y="144" width="150" height="40"/>
